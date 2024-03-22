@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Rabbit_MQ_Consumer.props" />
+</Project>

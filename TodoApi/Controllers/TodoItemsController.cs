@@ -17,6 +17,7 @@ namespace TodoApi.Controllers
         private readonly TodoContext _context;
         private readonly IMessageProducer _messageProducer;
 
+        // Constructor
         public TodoItemsController(TodoContext context, IMessageProducer messageProducer)
         {
             _context = context;
@@ -83,7 +84,7 @@ namespace TodoApi.Controllers
         {
             _context.todoitems.Add(todoItem);
             await _context.SaveChangesAsync();
-            // Publish a Message
+            // Publish a Message to RabbitMQ
             _messageProducer.SendingMessage<TodoItem>(todoItem);
             return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
         }

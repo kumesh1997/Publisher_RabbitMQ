@@ -23,11 +23,11 @@ public class MessageProducer : IMessageProducer
         // Specify the Channel
         using var channel = con.CreateModel();
         // Create a Queue
-        channel.QueueDeclare("todos", durable: true, exclusive: false);
+        channel.QueueDeclare( "todos", durable: true, exclusive: false);
 
         var jsonmessage = JsonSerializer.Serialize(message);
         var body = Encoding.UTF8.GetBytes(jsonmessage);
         // Publish the Message
-        channel.BasicPublish("", "todos", body: body);
+        channel.BasicPublish(exchange: "", routingKey: "todos", body: body);
     }
 }
