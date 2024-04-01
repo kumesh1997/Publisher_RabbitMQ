@@ -255,3 +255,4 @@ C:\Users\tharinduk\OneDrive - ORELIT (PVT) LTD\Desktop\Controler Bases API\TodoA
 C:\Users\tharinduk\OneDrive - ORELIT (PVT) LTD\Desktop\Controler Bases API\TodoApi\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\tharinduk\OneDrive - ORELIT (PVT) LTD\Desktop\Controler Bases API\TodoApi\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\Users\tharinduk\OneDrive - ORELIT (PVT) LTD\Desktop\Controler Bases API\TodoApi\obj\Debug\net8.0\TodoApi.sourcelink.json
+C:\Users\tharinduk\OneDrive - ORELIT (PVT) LTD\Desktop\Controler Bases API\TodoApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
